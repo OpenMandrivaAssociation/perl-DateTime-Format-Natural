@@ -15,14 +15,16 @@ BuildRequires: perl(Carp)
 BuildRequires: perl(DateTime)
 BuildRequires: perl(Exporter)
 BuildRequires: perl(List::MoreUtils)
+BuildRequires: perl(Module::Build::Compat)
 BuildRequires: perl(Params::Validate)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Storable)
+BuildRequires: perl(Time::Piece)
 BuildRequires: perl(Term::ReadLine)
 BuildRequires: perl(Test::MockTime)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(boolean)
-BuildRequires: perl(Module::Build::Compat)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -35,11 +37,10 @@ and creates a machine readable one by applying natural parsing logic.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 rm -rf %buildroot
@@ -55,4 +56,3 @@ rm -rf %buildroot
 %perl_vendorlib/*
 /usr/bin/dateparse
 /usr/share/man/man1/dateparse.1.lzma
-
