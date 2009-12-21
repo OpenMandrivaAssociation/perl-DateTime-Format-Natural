@@ -1,5 +1,5 @@
 %define upstream_name    DateTime-Format-Natural
-%define upstream_version 0.81
+%define upstream_version 0.82
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
