@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Base class for DateTime::Format::Natural::Lang::
 License:    GPL+ or Artistic
@@ -24,7 +24,8 @@ BuildRequires: perl(Term::ReadLine)
 BuildRequires: perl(Test::MockTime)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(boolean)
-
+# not autodetected 
+Requires: perl(boolean)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
