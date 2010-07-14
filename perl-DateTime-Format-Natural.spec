@@ -1,9 +1,9 @@
 %define upstream_name    DateTime-Format-Natural
-%define upstream_version 0.86
+%define upstream_version 0.88
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Base class for DateTime::Format::Natural::Lang::
 License:    GPL+ or Artistic
