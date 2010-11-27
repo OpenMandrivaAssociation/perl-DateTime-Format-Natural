@@ -1,5 +1,5 @@
 %define upstream_name    DateTime-Format-Natural
-%define upstream_version 0.89
+%define upstream_version 0.91
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -54,6 +54,6 @@ rm -rf %buildroot
 %defattr(-,root,root)
 %doc Changes README
 %{_mandir}/man3/*
-%perl_vendorlib/*
-/usr/bin/dateparse
-/usr/share/man/man1/dateparse.1.lzma
+%perl_vendorlib/DateTime
+%{_bindir}/dateparse
+%{_mandir}/man1/dateparse.1*
