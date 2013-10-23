@@ -1,15 +1,15 @@
 %define upstream_name    DateTime-Format-Natural
-%define upstream_version 0.96
+%define upstream_version 1.02
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Base class for DateTime::Format::Natural::Lang::
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/DateTime/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/DateTime/DateTime-Format-Natural-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -124,3 +124,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sun Nov 29 2009 cpan2dist 0.81-1mdv
 - initial mdv release, generated with cpan2dist
+

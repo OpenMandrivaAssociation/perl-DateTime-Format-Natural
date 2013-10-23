@@ -1,2 +1,4 @@
+removed_sources:
+  DateTime-Format-Natural-0.96.tar.gz: 437050631e1aeb79f8bb17a624fa79c441cbb307
 sources:
-  "DateTime-Format-Natural-0.96.tar.gz": 437050631e1aeb79f8bb17a624fa79c441cbb307
+  DateTime-Format-Natural-1.02.tar.gz: a9b8ae29d1197fa3afa06ad10f54a9988cae4e28
