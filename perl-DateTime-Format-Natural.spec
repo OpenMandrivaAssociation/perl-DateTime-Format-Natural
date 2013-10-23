@@ -12,6 +12,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/DateTime/DateTime-Format-Natural-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Clone)
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(DateTime)
 BuildRequires:	perl(Exporter)
