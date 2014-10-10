@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Release:	2
 
 Summary:	Base class for DateTime::Format::Natural::Lang::
 License:	GPL+ or Artistic
