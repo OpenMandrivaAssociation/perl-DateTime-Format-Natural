@@ -1,15 +1,15 @@
 %define upstream_name    DateTime-Format-Natural
-%define upstream_version 1.02
+%define upstream_version 1.27
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Base class for DateTime::Format::Natural::Lang::
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/DateTime/DateTime-Format-Natural-%{upstream_version}.tar.gz
+Url:		https://github.com/stsc/DateTime-Format-Natural
+Source0:	https://cpan.metacpan.org/authors/id/S/SC/SCHUBIGER/DateTime-Format-Natural-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
