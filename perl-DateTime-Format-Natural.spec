@@ -1,15 +1,13 @@
 %define upstream_name    DateTime-Format-Natural
-%define upstream_version 1.27
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.27
+Release:	2
 
 Summary:	Base class for DateTime::Format::Natural::Lang::
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/stsc/DateTime-Format-Natural
-Source0:	https://cpan.metacpan.org/authors/id/S/SC/SCHUBIGER/DateTime-Format-Natural-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SC/SCHUBIGER/DateTime-Format-Natural-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -37,7 +35,7 @@ BuildArch:	noarch
 and creates a machine readable one by applying natural parsing logic.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
